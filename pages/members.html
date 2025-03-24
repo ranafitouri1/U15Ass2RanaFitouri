@@ -59,8 +59,7 @@
 </body>
 </html>
 <style>
-
-/* Reset default margin and padding for a consistent layout */
+ /* Reset default margin and padding for a consistent layout */
 body {
     font-family: Arial, sans-serif; /* Sets the default font style */
     margin: 0;
@@ -123,19 +122,45 @@ nav a {
     margin: 0 auto; /* Center text */
 }
  
- 
-.sections {
-    display: flex; /* Enables side-by-side layout */
-    justify-content: space-around; /* Spaces sections evenly */
-    padding: 20px;
-}
- 
-/* Individual Section Styling */
-.section {
-    width: 45%; /* Sets equal width for both sections */
+/* Sign-Up Form Styling */
+.signup-form {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center elements */
+    margin: 20px auto;
+    max-width: 400px; /* Limit the width of the form */
     padding: 20px;
     border: 1px solid #ddd; /* Adds a subtle border */
-    background-color: #f9f9f9; /* Light background for readability */
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.signup-form label {
+    margin-bottom: 10px; /* Space between label and input */
+    font-size: 16px; /* Adjust font size */
+}
+
+.signup-form input {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 20px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+}
+
+.signup-form button {
+    background-color: #76A685; /* Match the theme color */
+    color: white; /* White text for contrast */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.signup-form button:hover {
+    background-color: #5a8d6a; /* Slightly darker on hover */
 }
  
 /* Footer Styling */
