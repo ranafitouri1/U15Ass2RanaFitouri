@@ -1,46 +1,96 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Declares the document type and language for the webpage -->
+<html lang="en"> <!-- Specifies the document type and language -->
 <head>
-<meta charset="UTF-8" /> <!-- Sets the character encoding for the document to UTF-8 -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive design on mobile devices -->
-<title>About Us</title> <!-- Sets the title of the webpage, displayed on the browser tab -->
-<link href="css/style.css" rel="stylesheet" /> <!-- Links an external CSS file for styling -->
-<script src="scripts/javascript.js" defer></script> <!-- Links an external JavaScript file and ensures it loads after the HTML -->
+<!-- Metadata for the webpage -->
+<meta charset="UTF-8" /> <!-- Sets the character encoding to support all characters -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures the page is responsive -->
+<meta name="description" content="Learn more about our charity organization and our mission, values, and team." /> <!-- Provides a description for search engines (SEO) -->
+<title>About Us</title> <!-- Specifies the title of the webpage, shown in the browser tab -->
+<link href="css/style.css" rel="stylesheet" /> <!-- Links the external CSS file for styling -->
+<script src="scripts/javascript.js" defer></script> <!-- Links the external JavaScript file and defers loading -->
 </head>
 <body>
 <!-- Header Section with Logo -->
-<header role="banner" class="site-header"> <!-- Defines a banner role for accessibility -->
-<h1>Slovenske Vzdelavacie Centrum</h1> <!-- Displays the website's main title -->
-<img src="images/logo.png" alt="Logo" class="logo" /> <!-- Displays the site logo with a descriptive alt text -->
+<header role="banner" class="site-header"> <!-- Provides a banner role for accessibility -->
+<img src="images/logo.png" alt="Logo" class="logo" /> <!-- Displays the logo with descriptive alt text -->
+<!-- Navigation Bar -->
+<nav role="navigation" class="navbar"> <!-- Provides a navigation role for accessibility -->
+<a href="index.html">Homepage</a> <!-- Link to Homepage -->
+<a href="aboutus.html">About Us</a> <!-- Link to About Us -->
+<a href="courses.html">Courses</a> <!-- Link to Courses -->
+<a href="dates.html">Dates</a> <!-- Link to Dates -->
+<a href="educationgames.html">Education Games</a> <!-- Link to Education Games -->
+<a href="members.html">Members</a> <!-- Link to Members -->
+</nav>
 </header>
  
-    <!-- Navigation Bar -->
-<nav>
-<a href="index.html">Homepage</a>
-<a href="aboutus.html">About Us</a>
-<a href="courses.html">Courses</a>
-<a href="dates.html">Dates</a>
-<a href="educationgames.html">Education Games</a>
-<a href="members.html">Members</a>
-</nav>
- 
-    <!-- Main Content Area -->
-<main role="main" class="mainpage"> <!-- Defines the main role for accessibility -->
-<section> <!-- Groups related content within a semantic section tag -->
-<h2>Welcome to About Us</h2> <!-- Section heading -->
-<p>Learn more about our organization, our mission, and our values. This page provides an overview of who we are and what we do.</p> <!-- Paragraph describing the page's purpose -->
+    <!-- Main Content Section -->
+<main class="mainpage" role="main"> <!-- Main section for primary content with an accessibility role -->
+<section class="about-section">
+<h2>Who We Are</h2> <!-- Section heading -->
+<div class="image-container">
+<img src="images/who_we_are.jpg" alt="Who We Are" class="about-img"> <!-- Related image -->
+</div>
+<p>Slovenské Vzdelávacie Centrum – South Manchester is a registered charity committed to the preservation and promotion of Slovak language and culture. We offer Slovak language education and organize cultural and community events aimed at assisting Slovak-speaking families in maintaining their heritage while residing abroad.</p>
+<p>Although our primary focus is on supporting Slovak-speaking children and families, we extend a warm invitation to anyone interested in learning the Slovak language and engaging with our cultural traditions. In addition to our Saturday school, we provide a variety of workshops, events, and social gatherings that allow individuals of all ages to connect, learn, and participate in our cultural community.</p>
 </section>
+ 
+        <section class="about-section">
+<h2>Our Mission</h2> <!-- Section heading -->
+<div class="image-container">
+<img src="images/our_mission.jpg" alt="Our Mission" class="about-img"> <!-- Related image -->
+</div>
+<p>At Slovenské Vzdelávacie Centrum – South Manchester, our mission transcends merely teaching the Slovak language. We strive to keep our heritage vibrant, ensuring that children raised abroad retain their connection to their roots, and to foster an environment where Slovak culture can flourish, even when far from home.</p>
+<p>We hold the belief that language encompasses more than mere words; it embodies identity, history, and a sense of belonging. Through our initiatives, we unite Slovak-speaking families, facilitating friendships, reinforcing cultural bonds, and helping them feel at home while living in the UK.</p>
+<p>Education is central to our efforts, but our mission reaches beyond that. We aim to bridge the divide between the UK and Slovak education systems, ensuring that children who may eventually return to Slovakia can do so seamlessly. We are dedicated to supporting families, providing guidance, and ensuring that no one feels adrift while navigating life between two nations.</p>
+<p>Above all, we aspire to cultivate a community that welcomes, supports, and celebrates the Slovak language, traditions, and the individuals who hold them dear.</p>
+</section>
+ 
+        <section class="about-section">
+<h2>Our Journey</h2> <!-- Section heading -->
+<div class="image-container">
+<img src="images/our_journey.png" alt="Our Journey" class="about-img"> <!-- Related image -->
+</div>
+<p>Slovenské Vzdelávacie Centrum – South Manchester was established by a group of passionate educators who shared a unified vision—to create a Slovak educational and cultural center that truly makes a positive impact.</p>
+<p>Driven by our commitment to education, culture, and community development, we dedicated ourselves to establishing a space where Slovak families could access high-quality educational resources and cultural experiences.</p>
+<p>After months of diligent effort, we were delighted to achieve registered charity status on September 9, 2024, representing a pivotal milestone in our journey. Our official launch on September 15 was a moment of great pride, celebrated in partnership with the Faculty of Education at Univerzita Mateja Bela and the Association of Slovak Schools and Community Centres in the UK.</p>
+<p>Since that time, we have continued to expand our reach, providing support to Slovak-speaking families, students, and individuals eager to learn, connect, and celebrate Slovak culture collectively.</p>
+</section>
+ 
+        <section class="about-section">
+<h2>Our Offerings and Support</h2> <!-- Section heading -->
+<div class="image-container">
+<img src="images/offerings_support.jpg" alt="Our Offerings and Support" class="about-img"> <!-- Related image -->
+</div>
+<p>At Slovenské Vzdelávacie Centrum – South Manchester, we deliver Slovak language education, organize cultural events, and assist Slovak-speaking families in navigating their lives between the UK and Slovakia. Whether you seek to learn, maintain your cultural ties, or find support, we are here to assist you.</p>
+</section>
+ 
+        <section class="about-section">
+<h2>Our Services</h2> <!-- Section heading -->
+<div class="image-container">
+<img src="images/our_services.jpg" alt="Our Services" class="about-img"> <!-- Related image -->
+</div>
+<p>We conduct Saturday Slovak language classes for both children and adults, along with various cultural and community activities:</p>
+<ul>
+<li>Morning Classes: 10:00 – 12:00 at The Firs Primary School</li>
+<li>Afternoon Classes: 14:00 – 16:00 at Sale High School</li>
+</ul>
+<p>Our programs include:</p>
+<ul>
+<li>Slovak Language Lessons – Engaging and well-structured classes for all ages.</li>
+<li>Tailored Teaching Approaches – Integrating UK educational methodologies for an effective learning experience.</li>
+<li>Cultural Events and Workshops – Celebrating Slovak heritage through interactive and engaging activities.</li>
+<li>Community and Social Gatherings – Providing opportunities to meet, connect, and forge lasting friendships.</li>
+<li>Adult Opportunities – Our offerings extend beyond children; adults can participate in workshops and networking events.</li>
+</ul>
+</section>
+ 
+       
 </main>
  
-    <!-- Additional Content Section -->
-<section class="content" role="complementary"> <!-- Groups related content for better semantics -->
-<h2>Our Story</h2> <!-- Heading for the organization's story -->
-<p>Founded in 2025, we are dedicated to delivering high-quality learning and support. Our team is passionate about providing valuable resources and opportunities to help our community thrive.</p> <!-- Description of the organization's mission -->
-</section>
- 
     <!-- Footer Section -->
-<footer role="contentinfo"> <!-- Defines the footer role for accessibility -->
-<p>&copy; 2025 Slovenske Vzdelavacie Centrum. All rights reserved.</p> <!-- Footer copyright -->
+<footer role="contentinfo"> <!-- Declares the footer as a contentinfo role for accessibility -->
+<p>&copy; 2025 Slovenske Vzdelavacie Centrum. All rights reserved.</p> <!-- Copyright text -->
 </footer>
 </body>
 </html>
