@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Membership sign up form</title>
-<link rel="stylesheet" href="styles.css" />
-</head>
 <body>
 <!-- Header Section with Logo -->
 <header role="banner" class="site-header">
-<h1>Slovenske Vzdelavacie Centrum</h1>
 <img src="images/logo.png" alt="Logo" class="logo" />
-</header>
- 
-    <!-- Navigation Section -->
-<nav>
+<!-- Navigation Bar -->
+<nav role="navigation" class="navbar">
 <a href="index.html">Homepage</a>
 <a href="aboutus.html">About Us</a>
 <a href="courses.html">Courses</a>
@@ -22,6 +11,7 @@
 <a href="educationgames.html">Education Games</a>
 <a href="members.html">Members</a>
 </nav>
+</header>
  
     <!-- Form Container -->
 <div class="form-container">
@@ -39,13 +29,13 @@
 <label for="phone">Phone Number:</label>
 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
  
-            <!-- Dropdown for Event Selection -->
+            <!-- Dropdown for Membership Selection -->
 <label for="event">Select a Membership:</label>
 <select id="event" name="event" required>
 <option value="">Choose a membership</option>
 <option value="Student-Membership">Student Membership</option>
 <option value="Family-Membership">Family Membership</option>
-<option value="Adult-Membership">Adult Membership </option>
+<option value="Adult-Membership">Adult Membership</option>
 </select>
  
             <!-- Additional Comments -->
