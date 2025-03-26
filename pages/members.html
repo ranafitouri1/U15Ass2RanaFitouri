@@ -1,145 +1,126 @@
 <body>
-<!-- Header Section with Logo -->
-<header role="banner" class="site-header">
-<img src="images/logo.png" alt="Logo" class="logo" />
-<!-- Navigation Bar -->
-<nav role="navigation" class="navbar">
-<a href="index.html">Homepage</a>
-<a href="aboutus.html">About Us</a>
-<a href="courses.html">Courses</a>
-<a href="dates.html">Dates</a>
-<a href="educationgames.html">Education Games</a>
-<a href="members.html">Members</a>
-</nav>
-</header>
- 
-    <!-- Form Container -->
-<div class="form-container">
-<h2>Sign up for membership</h2>
-<form action="/submit_form" method="POST">
-<!-- Name Field -->
-<label for="name">Full Name:</label>
-<input type="text" id="name" name="name" placeholder="Enter your name" required />
- 
-            <!-- Email Field -->
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" placeholder="Enter your email" required />
- 
-            <!-- Phone Field -->
-<label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
- 
-            <!-- Dropdown for Membership Selection -->
-<label for="event">Select a Membership:</label>
-<select id="event" name="event" required>
-<option value="">Choose a membership</option>
-<option value="Student-Membership">Student Membership</option>
-<option value="Family-Membership">Family Membership</option>
-<option value="Adult-Membership">Adult Membership</option>
-</select>
- 
-            <!-- Additional Comments -->
-<label for="comments">Additional Comments:</label>
-<textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments"></textarea>
- 
-            <!-- Submit Button -->
-<button type="submit">Sign Up</button>
-</form>
-</div>
+  <!-- Header Section with Logo -->
+  <header role="banner" class="site-header">
+    <img src="images/logo.png" alt="Logo" class="logo" />
+    <!-- Navigation Bar -->
+    <nav role="navigation" class="navbar">
+      <a href="index.html">Homepage</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="courses.html">Courses</a>
+      <a href="dates.html">Dates</a>
+      <a href="educationgames.html">Education Games</a>
+      <a href="members.html">Members</a>
+    </nav>
+  </header>
+  
+  <!-- Form Container -->
+  <div class="signup-form">
+    <h2>Sign up for membership</h2>
+    <form action="/submit_form" method="POST">
+      <!-- Name Field -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      
+      <!-- Email Field -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      
+      <!-- Phone Field -->
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+      
+      <!-- Dropdown for Membership Selection -->
+      <label for="event">Select a Membership:</label>
+      <select id="event" name="event" required>
+        <option value="">Choose a membership</option>
+        <option value="Student-Membership">Student Membership</option>
+        <option value="Family-Membership">Family Membership</option>
+        <option value="Adult-Membership">Adult Membership</option>
+      </select>
+      
+      <!-- Additional Comments -->
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments"></textarea>
+      
+      <!-- Submit Button -->
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
 </body>
 </html>
+
 <style>
- /* Reset default margin and padding for a consistent layout */
-body {
+  /* Reset default margin and padding for a consistent layout */
+  body {
     font-family: Arial, sans-serif; /* Sets the default font style */
     margin: 0;
     padding: 0;
     text-align: center; /* Centers text globally */
     color: #76A685;
-}
- 
-/* Header Styling */
-header {
+  }
+
+  /* Header Styling */
+  header {
     display: flex; /* Uses flexbox for layout */
     justify-content: space-between; /* Pushes content to opposite sides */
     align-items: center; /* Aligns items vertically */
     padding: 20px;
     background-color: #f4f4f4; /* Light grey background */
     border-bottom: 2px solid #ddd; /* Adds a subtle bottom border */
-}
- 
-/* Logo Styling */
-.logo {
+  }
+
+  /* Logo Styling */
+  .logo {
     max-width: 100px; /* Restricts logo size */
-}
- 
-/* Navigation Bar Styling */
-nav {
+  }
+
+  /* Navigation Bar Styling */
+  nav {
     background-color: #76A685; /* Dark background for contrast */
     padding: 10px;
-}
- 
-nav a {
+  }
+
+  nav a {
     color: white; /* Sets text color */
     text-decoration: none; /* Removes underline from links */
     margin: 0 10px; /* Adds spacing between links */
-}
- 
-/* Main Content Section Styling */
- 
-.content {
+  }
+
+  /* Main Content Section Styling */
+  .signup-form {
     background-color: #f9f9f9; /* Light gray background */
     padding: 20px; /* Add space inside the main section */
     border-radius: 10px; /* Rounded corners */
     text-align: center; /* Center text */
     width: 100%; /* Full width */
-    max-width: 100%; /* Ensure it doesn't exceed the viewport */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 600px; /* Ensure it doesn't exceed a certain width */
+    margin: 20px auto; /* Center horizontally */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border: 2px solid #2c3e50; /* Dark blue-gray border */
-}
- 
-.content h2 {
+  }
+
+  .signup-form h2 {
     color: #76A685; /* Dark gray color for heading */
     font-size: 24px; /* Adjust font size */
-}
- 
-.content p {
-    color: #76A685; /* Medium gray for paragraph text */
-    font-size: 16px; /* Adjust font size */
-    line-height: 1.5; /* Improve readability */
-    max-width: 80%; /* Limit text width for better readability */
-    margin: 0 auto; /* Center text */
-}
- 
-/* Sign-Up Form Styling */
-.signup-form {
-    display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    align-items: center; /* Center elements */
-    margin: 20px auto;
-    max-width: 400px; /* Limit the width of the form */
-    padding: 20px;
-    border: 1px solid #ddd; /* Adds a subtle border */
-    background-color: #fff; /* White background for the form */
-    border-radius: 10px; /* Rounded corners */
-}
+  }
 
-.signup-form label {
+  .signup-form label {
     margin-bottom: 10px; /* Space between label and input */
     font-size: 16px; /* Adjust font size */
-}
+  }
 
-.signup-form input {
+  .signup-form input,
+  .signup-form select,
+  .signup-form textarea {
     width: 100%; /* Full width inputs */
     padding: 10px;
     margin-bottom: 20px; /* Space between inputs */
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Adjust font size */
-}
+  }
 
-.signup-form button {
+  .signup-form button {
     background-color: #76A685; /* Match the theme color */
     color: white; /* White text for contrast */
     padding: 10px 20px;
@@ -147,17 +128,17 @@ nav a {
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Adjust font size */
     cursor: pointer; /* Pointer cursor on hover */
-}
+  }
 
-.signup-form button:hover {
+  .signup-form button:hover {
     background-color: #5a8d6a; /* Slightly darker on hover */
-}
- 
-/* Footer Styling */
-footer {
+  }
+
+  /* Footer Styling */
+  footer {
     background-color: #76A685; /* Matches nav bar */
     color: white; /* White text for contrast */
     padding: 10px;
     position: relative;
-}
+  }
 </style>
