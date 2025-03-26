@@ -1,29 +1,57 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="en"> <!-- Declares the document type and sets the language of the webpage -->
 <head>
-    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive -->
-    <title>HomePage</title> <!-- Sets the title of the webpage -->
-    <link href="css/style.css" rel="stylesheet"> <!-- Links the external CSS file -->
+<meta charset="UTF-8" /> <!-- Sets the character encoding for the document to UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures the webpage is responsive on mobile devices -->
+<title>Slovenske Vzdelavacie Centrum</title> <!-- Sets the title of the webpage -->
+<link href="css/style.css" rel="stylesheet" /> <!-- Links the external CSS file -->
+<script src="scripts/javascripts.js" defer></script> <!-- Links the external JS file and ensures it loads after the HTML -->
 </head>
 <body>
-
-    <!-- Header Section with Logo -->
-    <header>
-        <h1>Website Header</h1> <!-- Main title of the website -->
-        <img src="images/logo.png" alt="Logo" class="logo"> <!-- Displays a logo image -->
-    </header>
-
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="index.html">Home</a> <!-- Navigation link to Home page -->
-        <a href="pages/aboutus.html">About Us</a> <!-- Navigation link to About page -->
-        <a href="pages/members.html">Members</a> <!-- Navigation link to Membership page -->
-        <a href="pages/courses.html">Courses</a> <!-- Navigation link to Course page -->
-        <a href="pages/educationgames.html">Education Games</a> <!-- Navigation link to Education Games page -->
-        <a href="pages/events.html">Events</a> <!-- Navigation link to Events page -->
-    </nav>
-
+<!-- Header Section with Logo -->
+<header role="banner" class="site-header"> <!-- Adds accessibility role for the header -->
+<img src="images/logo.png" alt="Slovenske Vzdelavacie Centrum Logo" class="logo" /> <!-- Enhances logo alt text for better accessibility -->
+<!-- Navigation Bar -->
+<nav role="navigation" class="navbar"> <!-- Adds navigation role for accessibility -->
+<a href="index.html">Homepage</a> <!-- Navigation link to the Homepage -->
+<a href="aboutus.html">About Us</a> <!-- Navigation link to the About Us page -->
+<a href="courses.html">Courses</a> <!-- Navigation link to the Courses page -->
+<a href="dates.html">Dates</a> <!-- Navigation link to the Dates page -->
+<a href="educationgames.html">Education Games</a> <!-- Navigation link to the Education Games page -->
+<a href="members.html">Members</a> <!-- Navigation link to the Members page -->
+</nav>
+</header>
+ 
+    <!-- Main Content Area with Two Sections -->
+<main role="main"> <!-- Adds main role for accessibility -->
+<h2>Welcome to Slovenske Vzdelavacie Centrum</h2> <!-- Main heading for content section -->
+<p>Welcome to our charity organization! We are dedicated to providing educational resources and support to our community. On this website, you will find information about our mission, the courses we offer, important dates, and educational games for all ages.</p> <!-- Enhanced readability -->
+<div class="sections"> <!-- Container to hold sections side by side -->
+<section class="section"> <!-- First section -->
+<h3>Our Mission</h3> <!-- Improved heading -->
+<img src="images/mission.jpg" alt="Our Mission" class="section-img" /> <!-- Image supporting mission -->
+<p>Learn about our mission and how we aim to make a difference in our community.</p> <!-- Updated content -->
+</section>
+<section class="section"> <!-- Second section -->
+<h3>Our Impact</h3> <!-- Improved heading -->
+<img src="images/impact.png" alt="Our Impact" class="section-img" /> <!-- Image supporting impact -->
+<p>Discover the impact our initiatives have had and how we are helping the community thrive.</p> <!-- Updated content -->
+</section>
+<section class="section"> <!-- Third section -->
+<h3>Courses We Offer</h3> <!-- Improved heading -->
+<img src="images/courses.jpg" alt="Our Courses" class="section-img" /> <!-- Image supporting courses -->
+<p>Explore the range of courses we offer to empower individuals with knowledge and skills.</p> <!-- Updated content -->
+</section>
+<section class="section"> <!-- Fourth section -->
+<h3>Educational Games</h3> <!-- Improved heading -->
+<img src="images/games.jpg" alt="Educational Games" class="section-img" /> <!-- Image supporting educational games -->
+<p>Engage with our fun and educational games designed for all ages to enhance learning.</p> <!-- Updated content -->
+</section>
+</div>
+</main>
+<!-- Footer Section -->
+<footer role="contentinfo"> <!-- Adds footer role for accessibility -->
+<p>&copy; 2025 Slovenske Vzdelavacie Centrum. All rights reserved.</p> <!-- Footer copyright information -->
+</footer>
 </body>
 </html>
